@@ -5,7 +5,9 @@
         <use xlink:href="#icon-ziran"></use>
       </svg>
     </router-link>
-    <router-link to="/doc" class="menu">文档</router-link>
+    <router-link to="/doc" class="menu">
+      <strong>文档</strong>
+    </router-link>
     <svg
       v-if="toggleMenuButtonVisible"
       class="toggleAside icon"
@@ -50,9 +52,9 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(243, 155, 104);
-  color: #fff;
-  padding: 0px 60px;
+  background-color: #fff;
+  color: #000;
+  padding:0 60px;
   height: 60px;
   position: fixed;
   width: 100vw;
