@@ -1,4 +1,5 @@
 # 介绍
-物语UI是一款基于Vue3和Typescript开发的组件库
 
-下一节：[安装](#/doc/install)
+物语 UI 是一款基于**Vue3**和**Typescript**开发的组件库
+
+下一节：[<font color=#ff6721>安装</font>](#/doc/install)

@@ -7,4 +7,4 @@ yarn add language-ui
 ```
 npm install language-ui
 ```
-下一节：[开始使用](#/doc/start)
+下一节：[<font color=#ff6721>开始使用</font>](#/doc/start)
