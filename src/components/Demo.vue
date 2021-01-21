@@ -52,7 +52,6 @@ export default {
 <style lang="scss" scoped>
 $border-color: #d9d9d9;
 .demo {
-  max-width:100%;
   border: 1px solid $border-color;
   margin: 16px 0 32px;
   > h2 {
@@ -70,10 +69,12 @@ $border-color: #d9d9d9;
   &-code {
     padding: 8px 16px;
     border-top: 1px dashed $border-color;
+    overflow: scroll;
     > pre {
       line-height: 1.1;
       font-family: Consolas, "Courier New", Courier, monospace;
       margin: 0;
+      width:70vw;
     }
   }
 }

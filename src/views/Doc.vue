@@ -114,6 +114,7 @@ export default {
       margin-top: 10px;
       margin-left:30px;
       margin-right:30px;
+      max-width:100vw;
       @media (max-width: 500px) {
         margin-left: 30px;
       }
