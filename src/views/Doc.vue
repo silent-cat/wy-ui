@@ -104,7 +104,7 @@ export default {
 
       @media (max-width: 500px) {
         position: fixed;
-        top: 0;
+        top: 10px;
         left: 0;
         padding-top: 60px;
       }
@@ -113,6 +113,7 @@ export default {
       flex-grow: 1;
       margin-top: 10px;
       margin-left:30px;
+      margin-right:30px;
       @media (max-width: 500px) {
         margin-left: 30px;
       }

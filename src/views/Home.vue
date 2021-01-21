@@ -26,7 +26,7 @@
           <use xlink:href="#icon-ts"></use>
         </svg>
         <h3>基于 TypeScript</h3>
-        <p>源代码采用 TypeScript 书写（非严格检查）</p>
+        <p>源代码采用 TypeScript 书写 </p>
       </li>
       <li>
         <svg>
@@ -80,6 +80,11 @@ export default {
       border-radius: 10px;
       border: 2px solid;
       transition: all 250ms;
+      @media (max-width:500px){
+        display: block;
+        margin-left:50%;
+        transform: translateX(-50%);
+      }
     }
     > .start:hover,
     > .github:hover {
@@ -89,19 +94,30 @@ export default {
   }
 }
 .features {
-  margin: 12px auto;
-  width: 400px;
+  margin: 32px auto;
+  padding:0 16px;
   @media (min-width: 800px) {
-    width: 800px;
+    width:640px;
+    >ul{
+      justify-content: start!important;
+      >li{
+        width:50%;
+      }
+    }
   }
   @media (min-width: 1200px) {
     width: 1200px;
+    >ul{
+      >li{
+        width:33.3%;
+      }
+    }
   }
   > ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     > li {
-      width: 400px;
       margin: 16px 0;
       display: grid;
       justify-content: start;

@@ -14,7 +14,7 @@
       @click="toggleMenu"
       toggleAsideVisible
     >
-      <use xlink:href="#icon-menu"></use>
+      <use xlink:href="#icon-menu1"></use>
     </svg>
   </div>
 </template>
@@ -34,6 +34,7 @@ export default {
     // 点击改变menuVisible的值
     const toggleMenu = () => {
       menuVisible.value = !menuVisible.value;
+
     };
     return { toggleMenu };
   },
@@ -54,7 +55,7 @@ export default {
   align-items: center;
   background-color: #fff;
   color: #000;
-  padding:0 60px;
+  padding: 0 60px;
   height: 60px;
   position: fixed;
   width: 100vw;
@@ -68,7 +69,7 @@ export default {
     // width: 24px;
     // height: 24px;
     // background-color: rgb(241, 199, 120);
-    font-size:28px;
+    font-size: 28px;
     position: absolute;
     left: 18px;
     top: 50%;
