@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <top-bar/>
+    <top-bar />
     <div class="content">
       <h1>物语UI</h1>
       <h4 class="intro">基于Vue3和Typescript实现的UI组件库</h4>
@@ -26,7 +26,7 @@
           <use xlink:href="#icon-ts"></use>
         </svg>
         <h3>基于 TypeScript</h3>
-        <p>源代码采用 TypeScript 书写 </p>
+        <p>源代码采用 TypeScript 书写</p>
       </li>
       <li>
         <svg>
@@ -40,17 +40,17 @@
 </template>
 
 <script lang="ts">
-import TopBar from "../components/TopBar.vue";
+import TopBar from '../components/TopBar.vue'
 export default {
   data() {
-    return {};
+    return {}
   },
   components: {
     TopBar,
   },
   created() {},
   methods: {},
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -80,9 +80,9 @@ export default {
       border-radius: 10px;
       border: 2px solid;
       transition: all 250ms;
-      @media (max-width:500px){
+      @media (max-width: 500px) {
         display: block;
-        margin-left:50%;
+        margin-left: 50%;
         transform: translateX(-50%);
       }
     }
@@ -95,21 +95,21 @@ export default {
 }
 .features {
   margin: 32px auto;
-  padding:0 16px;
+  padding: 0 16px;
   @media (min-width: 800px) {
-    width:640px;
-    >ul{
-      justify-content: start!important;
-      >li{
-        width:50%;
+    width: 640px;
+    > ul {
+      justify-content: start !important;
+      > li {
+        width: 50%;
       }
     }
   }
   @media (min-width: 1200px) {
     width: 1200px;
-    >ul{
-      >li{
-        width:33.3%;
+    > ul {
+      > li {
+        width: 33.3%;
       }
     }
   }
@@ -123,8 +123,8 @@ export default {
       justify-content: start;
       align-content: space-between;
       grid-template-areas:
-        "icon title"
-        "icon text";
+        'icon title'
+        'icon text';
       grid-template-columns: 80px auto;
       grid-template-rows: 1fr auto;
       > svg {

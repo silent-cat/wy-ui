@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { computed } from "vue";
+import { computed } from 'vue'
 export default {
   //   inheritAttrs: false, //继承属性改成false，取消自动绑定事件
   // props和attrs的区别
@@ -22,15 +22,15 @@ export default {
     // size: String,
     theme: {
       type: String,
-      default: "button",
+      default: 'button',
     },
     size: {
       type: String,
-      defalut: "normal",
+      defalut: 'normal',
     },
     level: {
       type: String,
-      default: "normal",
+      default: 'normal',
     },
     disabled: {
       type: Boolean,
@@ -42,7 +42,7 @@ export default {
     },
   },
   setup(props) {
-    const { theme, size, level, disabled } = props;
+    const { theme, size, level, disabled } = props
     // console.log(disabled);
     if (disabled === true) {
     }
@@ -51,9 +51,9 @@ export default {
         [`language-theme-${theme}`]: theme,
         [`language-size-${size}`]: size,
         [`language-level-${level}`]: level,
-      };
-    });
-    return { classes };
+      }
+    })
+    return { classes }
   },
   //   setup(props, context) {
   //     console.log({ ...props });//不声明的话打印出来的是个空对象
@@ -61,7 +61,7 @@ export default {
   //     const { size, ...rest } = context.attrs;
   //     return { size, rest };
   //   },
-};
+}
 </script>
 
 <style lang="scss">
@@ -72,7 +72,7 @@ export default {
 // 避免被使用者覆盖
 
 // css最小影响原则：绝对不能影响库的使用者
-$color:#ff6721;
+$color: #ff6721;
 .language-button {
   background-color: #fff;
   outline: none;
@@ -86,7 +86,7 @@ $color:#ff6721;
 
   &:hover {
     color: $color;
-    border-color:$color;
+    border-color: $color;
   }
   & + & {
     margin-left: 16px;
@@ -124,7 +124,6 @@ $color:#ff6721;
     &:hover {
       opacity: 0.6;
     }
-    
   }
   &.language-level-success {
     background-color: #67c23a;
@@ -185,7 +184,7 @@ $color:#ff6721;
     border-radius: 14px;
     border-color: $color $color $color transparent;
     border-style: solid;
-    border-width:2px;
+    border-width: 2px;
     animation: language-spin 1s infinite linear;
   }
 }

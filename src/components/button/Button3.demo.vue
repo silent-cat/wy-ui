@@ -8,11 +8,3 @@
   <wy-button level="warn">警告</wy-button>
   <wy-button level="danger">危险</wy-button>
 </template>
-<script lang="ts">
-import wyButton from "../lib/wyButton.vue";
-export default {
-  components: {
-    wyButton
-  },
-};
-</script>

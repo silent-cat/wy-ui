@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import wyButton from "./wyButton.vue";
+import wyButton from './wyButton.vue'
 export default {
   props: {
     visible: {
@@ -44,28 +44,28 @@ export default {
   },
   setup(props, context) {
     const close = () => {
-      context.emit("update:visible", false);
-    };
+      context.emit('update:visible', false)
+    }
     const onClickOverlay = () => {
       if (props.closeOnClickOverlay) {
-        close();
+        close()
       }
-    };
+    }
     const confirm = () => {
       if (props.confirm && props.confirm() !== false) {
-        close();
+        close()
       }
-    };
+    }
     const cancel = () => {
       props.cancel && props.cancel()
-      close();
-    };
-    return { close, onClickOverlay, confirm, cancel };
+      close()
+    }
+    return { close, onClickOverlay, confirm, cancel }
   },
   components: {
     wyButton,
   },
-};
+}
 </script>
 
 <style lang="scss">
@@ -121,7 +121,7 @@ $border-color: #d9d9d9;
     cursor: pointer;
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       height: 1px;
       background: black;

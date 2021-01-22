@@ -11,6 +11,4 @@
   </article> -->
   <!-- <Markdown path="../markdown/install.md"/> -->
   <div></div>
-
 </template>
-

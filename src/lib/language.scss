@@ -1,12 +1,13 @@
 // 匹配到以language-开头的类和包含 空格language- 的类
-[class^="language-"],
-[class*=" language-"] {
+[class^='language-'],
+[class*=' language-'] {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
   // 为什么这样写 font-family
   // 答案见 https://github.com/zenozeng/fonts.css/
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
-
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui',
+    'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
 }

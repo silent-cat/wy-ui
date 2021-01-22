@@ -17,26 +17,20 @@
   </wy-dialog>
 </template>
 <script lang="ts">
-import wyDialog from "../lib/wyDialog.vue";
-import wyButton from "../lib/wyButton.vue";
-import { ref } from "vue";
+import { ref } from 'vue'
 export default {
-  components: {
-    wyDialog,
-    wyButton,
-  },
   setup() {
-    const show = ref(false);
+    const show = ref(false)
     const toggle = () => {
-      show.value = !show.value;
-    };
+      show.value = !show.value
+    }
     const f1 = () => {
-      return true;
-    };
+      return true
+    }
     const f2 = () => {
-      console.log("f2");
-    };
-    return { show, toggle, f1, f2 };
+      console.log('f2')
+    }
+    return { show, toggle, f1, f2 }
   },
-};
+}
 </script>

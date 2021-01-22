@@ -15,14 +15,14 @@
 </template>
 
 <script lang="ts">
-import wyButton from "../lib/wyButton.vue";
-import "prismjs"; //用于高亮源代码
-import "prismjs/themes/prism-coy.css"; //引入主题样式
-import { computed, ref } from "vue";
-const Prism = (window as any).Prism;
+import wyButton from '../lib/wyButton.vue'
+import 'prismjs' //用于高亮源代码
+import 'prismjs/themes/prism-coy.css' //引入主题样式
+import { computed, ref } from 'vue'
+const Prism = (window as any).Prism
 export default {
   components: {
-    wyButton
+    wyButton,
   },
   props: {
     component: Object,
@@ -32,21 +32,20 @@ export default {
       Prism.highlight(
         props.component.__sourceCode,
         Prism.languages.html,
-        "html"
+        'html'
       )
-    );
+    )
     const showCode = () => {
-      codeVisible.value = true;
-    };
+      codeVisible.value = true
+    }
     const hideCode = () => {
-      codeVisible.value = false;
-    };
-    const codeVisible = ref(false);
-    return { Prism, html, codeVisible, showCode, hideCode };
+      codeVisible.value = false
+    }
+    const codeVisible = ref(false)
+    return { Prism, html, codeVisible, showCode, hideCode }
   },
-  methods: {
-  },
-};
+  methods: {},
+}
 </script>
 
 <style lang="scss" scoped>
@@ -72,9 +71,9 @@ $border-color: #d9d9d9;
     overflow: scroll;
     > pre {
       line-height: 1.1;
-      font-family: Consolas, "Courier New", Courier, monospace;
+      font-family: Consolas, 'Courier New', Courier, monospace;
       margin: 0;
-      width:70vw;
+      width: 70vw;
     }
   }
 }

@@ -2,34 +2,34 @@
   <button
     @click="toggle"
     class="language-switch"
-    :class="{ 'language-checked': value ,[`language-size-${size}`]: size}"
+    :class="{ 'language-checked': value, [`language-size-${size}`]: size }"
   >
     <span></span>
   </button>
 </template>
 
 <script lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue'
 export default {
   props: {
     value: Boolean,
-    size:{
-      type:String,
-      default:'normal'
-    }
+    size: {
+      type: String,
+      default: 'normal',
+    },
   },
 
   setup(props, context) {
     // 切换开关
     const toggle = () => {
-      context.emit("update:value", !props.value);
-    };
-    return { toggle };
+      context.emit('update:value', !props.value)
+    }
+    return { toggle }
     //
-    const { size } = props;
+    const { size } = props
     //
   },
-};
+}
 </script>
 
 <style lang="scss">

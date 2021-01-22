@@ -5,16 +5,12 @@
 </template>
 
 <script>
-import Tabs1Demo from "./Tabs1.demo.vue";
-import Demo from "./Demo.vue";
+import Tabs1Demo from '../tabs/Tabs1.demo.vue'
 export default {
-  components: {
-    Demo,
-  },
   setup() {
-    return { Tabs1Demo };
+    return { Tabs1Demo }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped></style>

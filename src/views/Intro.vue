@@ -7,14 +7,14 @@
 <script lang="ts">
 // import md from "../markdown/intro.md";
 export default {
-//   components: {
-//   },
-//   data() {
-//     return {
-//       md,
-//     };
-//   },
-};
+  //   components: {
+  //   },
+  //   data() {
+  //     return {
+  //       md,
+  //     };
+  //   },
+}
 </script>
 
 <style></style>

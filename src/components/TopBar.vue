@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import { inject, Ref } from "vue";
+import { inject, Ref } from 'vue'
 export default {
   props: {
     toggleMenuButtonVisible: {
@@ -30,21 +30,20 @@ export default {
   },
   setup() {
     // 获取App.vue中的menuVisible
-    const menuVisible = inject<Ref<boolean>>("menuVisible");
+    const menuVisible = inject<Ref<boolean>>('menuVisible')
     // 点击改变menuVisible的值
     const toggleMenu = () => {
-      menuVisible.value = !menuVisible.value;
-
-    };
-    return { toggleMenu };
+      menuVisible.value = !menuVisible.value
+    }
+    return { toggleMenu }
   },
   data() {
-    return {};
+    return {}
   },
   components: {},
   created() {},
   methods: {},
-};
+}
 </script>
 
 <style lang="scss" scoped>

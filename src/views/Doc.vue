@@ -29,6 +29,9 @@
           <li>
             <router-link to="/doc/tabs">Tabs 标签页</router-link>
           </li>
+          <li>
+            <router-link to="/doc/input">Input 输入框</router-link>
+          </li>
         </ol>
       </aside>
       <main>
@@ -39,22 +42,22 @@
 </template>
 
 <script lang="ts">
-import { inject, Ref } from "vue";
-import TopBar from "../components/TopBar.vue";
+import { inject, Ref } from 'vue'
+import TopBar from '../components/TopBar.vue'
 export default {
   setup() {
-    const menuVisible = inject<Ref<boolean>>("menuVisible");
-    return { menuVisible };
+    const menuVisible = inject<Ref<boolean>>('menuVisible')
+    return { menuVisible }
   },
   data() {
-    return {};
+    return {}
   },
   components: {
     TopBar,
   },
   created() {},
   methods: {},
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -66,7 +69,7 @@ export default {
   height: 100vh;
   > .top-bar {
     flex-shrink: 0;
-    box-shadow:0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
   }
   // 对子元素使用padding挤到一边
   > .content {
@@ -88,7 +91,7 @@ export default {
       background-color: #fff;
       padding: 80px 30px 28px 30px;
       height: 100vh;
-      box-shadow:0px 0px 6px 4px rgba(0,0,0,.1);
+      box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
       > ol {
         > li {
           > a {
@@ -96,8 +99,8 @@ export default {
             padding: 6px 0;
           }
           .router-link-active {
-            width:100%;
-            color:#ff6721;
+            width: 100%;
+            color: #ff6721;
           }
         }
       }
@@ -112,9 +115,9 @@ export default {
     > main {
       flex-grow: 1;
       margin-top: 10px;
-      margin-left:30px;
-      margin-right:30px;
-      max-width:100vw;
+      margin-left: 30px;
+      margin-right: 30px;
+      max-width: 100vw;
       @media (max-width: 500px) {
         margin-left: 30px;
       }
