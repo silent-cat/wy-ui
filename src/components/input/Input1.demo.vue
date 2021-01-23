@@ -1,7 +1,17 @@
 <demo>
-输入框类型
+同步输入框
 </demo>
 
 <template>
-  <wy-input></wy-input>
+  <wy-input v-model:value="value"></wy-input>
+  <wy-input :value="value"></wy-input>
 </template>
+<script lang="ts">
+import { ref } from 'vue'
+export default {
+  setup() {
+    const value = ref(null)
+    return { value }
+  },
+}
+</script>
