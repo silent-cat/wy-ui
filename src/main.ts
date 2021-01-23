@@ -7,7 +7,19 @@ import 'github-markdown-css'
 import Markdown from './components/Markdown.vue'
 import Demo from './components/Demo.vue'
 
-import { Switch, Button, Tabs, Tab, Dialog, Input } from './lib/index'
+import {
+  Switch,
+  Button,
+  Tabs,
+  Tab,
+  Dialog,
+  Input,
+  Layout,
+  Header,
+  Content,
+  Footer,
+  Aside,
+} from './lib/index'
 
 import { router } from './router'
 
@@ -22,5 +34,10 @@ app.component('wy-switch', Switch)
 app.component('wy-button', Button)
 app.component('wy-tabs', Tabs)
 app.component('wy-tab', Tab)
-app.component('wy-dialog', Dialog)
 app.component('wy-input', Input)
+app.component('wy-dialog', Dialog)
+app.component('wy-layout', Layout)
+app.component('wy-header', Header)
+app.component('wy-content', Content)
+app.component('wy-footer', Footer)
+app.component('wy-aside', Aside)

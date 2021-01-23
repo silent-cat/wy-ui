@@ -3,7 +3,7 @@
 </demo>
 
 <template>
-  <wy-input v-model:value="value"></wy-input>
+  <wy-input v-model:value="value" placeholder="请输入内容"></wy-input>
   <wy-input :value="value"></wy-input>
 </template>
 <script lang="ts">

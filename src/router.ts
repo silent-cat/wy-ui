@@ -3,6 +3,7 @@ import ButtonDemo from './components/demo/ButtonDemo.vue'
 import DialogDemo from './components/demo/DialogDemo.vue'
 import TabsDemo from './components/demo/TabsDemo.vue'
 import InputDemo from './components/demo/InputDemo.vue'
+import LayoutDemo from './components/demo/LayoutDemo.vue'
 
 import Home from './views/Home.vue'
 import Doc from './views/Doc.vue'
@@ -45,6 +46,7 @@ export const router = createRouter({
         { path: 'dialog', component: DialogDemo },
         { path: 'tabs', component: TabsDemo },
         { path: 'input', component: InputDemo },
+        { path: 'layout', component: LayoutDemo },
       ],
     },
   ],
