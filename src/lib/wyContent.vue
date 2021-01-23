@@ -11,8 +11,8 @@ export default {}
 <style lang="scss">
 .language-layout-content {
   flex-grow: 1;
-  height: 128px;
-  line-height: 128px;
+  height: 160px;
+  line-height: 160px;
   background: #ff6721;
   text-align: center;
 }
