@@ -1,4 +1,4 @@
-import wyDialog from './wyDialog.vue'
+import wyDialog from './Dialog.vue'
 import { createApp, h } from 'vue'
 export const openDialog = (options) => {
   const { title, content, confirm, cancel } = options

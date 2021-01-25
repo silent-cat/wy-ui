@@ -4,7 +4,8 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import wyAside from './Aside.vue'
 import { onMounted, ref } from 'vue'
 export default {
   setup(props, context) {
@@ -18,8 +19,8 @@ export default {
       // })
       const tags = context.slots.default()
       tags.forEach((tag) => {
-        console.log(tag.type.__hmrId)
-        if (tag.type.__hmrId === '/src/lib/wyAside.vue') {
+        console.log(tag.type)
+        if (tag.type === wyAside) {
           bool.value = true
         }
       })

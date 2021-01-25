@@ -1,9 +1,4 @@
 <template>
-  <!-- <div :size="size">
-    <button v-bind="rest">
-      <slot />
-    </button>
-  </div> -->
   <button class="language-button" :class="classes" :disabled="disabled">
     <span v-if="loading" class="language-loadingIndicator"></span>
     <slot />

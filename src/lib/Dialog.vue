@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import wyButton from './wyButton.vue'
+import wyButton from './Button.vue'
 export default {
   props: {
     visible: {

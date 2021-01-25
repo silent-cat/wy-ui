@@ -11,7 +11,7 @@ export default {}
 <style lang="scss">
 .language-layout-aside {
   width: 200px;
-  line-height: 128px;
+  line-height: 160px;
   background: orange;
   text-align: center;
 }

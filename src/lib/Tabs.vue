@@ -32,7 +32,7 @@
 
 <script lang="ts">
 import { onMounted, onUpdated, ref, watchEffect } from 'vue'
-import wyTab from './wyTab.vue'
+import wyTab from './Tab.vue'
 export default {
   props: {
     selected: {
@@ -74,8 +74,11 @@ export default {
     })
     // 使用js获取插槽内容context.slots.default()
     const defaults = context.slots.default()
+
     // 判断使用者是否使用组件库规定的类型Tab,确认子组件的类型
     defaults.forEach((tag) => {
+      console.log(tag.type)
+
       if (tag.type !== wyTab) {
         throw new Error('Tabs 子标签必须是Tab')
       }

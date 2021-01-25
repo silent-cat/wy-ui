@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import wyButton from '../lib/wyButton.vue'
+import wyButton from '../lib/Button.vue'
 import 'prismjs' //用于高亮源代码
 import 'prismjs/themes/prism-coy.css' //引入主题样式
 import { computed, ref } from 'vue'
