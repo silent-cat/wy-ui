@@ -3,8 +3,8 @@
 </demo>
 
 <template>
-  <wy-input v-model:value="value" placeholder="请输入内容"></wy-input>
-  <wy-input :value="value"></wy-input>
+  <wy-input v-model:value="value" placeholder="请输入内容" />
+  <wy-input :value="value" />
 </template>
 <script lang="ts">
 import { ref } from 'vue'
