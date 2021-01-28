@@ -1,5 +1,5 @@
 <template>
-  <header class="language-layout-header">
+  <header class="wy-layout-header">
     <slot></slot>
   </header>
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.language-layout-header {
+.wy-layout-header {
   height: 64px;
   line-height: 64px;
   background-color: green;

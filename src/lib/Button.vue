@@ -1,6 +1,6 @@
 <template>
-  <button class="language-button" :class="classes" :disabled="disabled">
-    <span v-if="loading" class="language-loadingIndicator"></span>
+  <button class="wy-button" :class="classes" :disabled="disabled">
+    <span v-if="loading" class="wy-loadingIndicator"></span>
     <slot />
   </button>
 </template>
@@ -43,9 +43,9 @@ export default {
     }
     const classes = computed(() => {
       return {
-        [`language-theme-${theme}`]: theme,
-        [`language-size-${size}`]: size,
-        [`language-level-${level}`]: level,
+        [`wy-theme-${theme}`]: theme,
+        [`wy-size-${size}`]: size,
+        [`wy-level-${level}`]: level,
       }
     })
     return { classes }
@@ -68,7 +68,7 @@ export default {
 
 // css最小影响原则：绝对不能影响库的使用者
 $color: #ff6721;
-.language-button {
+.wy-button {
   background-color: #fff;
   outline: none;
   border: 1px solid #d9d9d9;
@@ -88,31 +88,31 @@ $color: #ff6721;
   }
 
   // 控制按钮种类
-  &.language-theme-link {
+  &.wy-theme-link {
     border: none;
     border-radius: 0;
     background-color: #fff;
     border-bottom: 1px solid;
     outline: none;
   }
-  &.language-theme-text {
+  &.wy-theme-text {
     border: none;
     background-color: #fff;
     outline: none;
   }
   // 控制按钮大小
-  &.language-size-small {
+  &.wy-size-small {
     font-size: 12px;
     height: 24px;
     padding: 0 12px;
   }
-  &.language-size-big {
+  &.wy-size-big {
     font-size: 24px;
     height: 48px;
     padding: 0 24px;
   }
   //控制按钮等级
-  &.language-level-primary {
+  &.wy-level-primary {
     background-color: #1890ff;
     color: #fff;
     border: none;
@@ -120,7 +120,7 @@ $color: #ff6721;
       opacity: 0.6;
     }
   }
-  &.language-level-success {
+  &.wy-level-success {
     background-color: #67c23a;
     color: #fff;
     border: none;
@@ -128,7 +128,7 @@ $color: #ff6721;
       opacity: 0.6;
     }
   }
-  &.language-level-info {
+  &.wy-level-info {
     background-color: #909399;
     color: #fff;
     border: none;
@@ -136,7 +136,7 @@ $color: #ff6721;
       opacity: 0.6;
     }
   }
-  &.language-level-warn {
+  &.wy-level-warn {
     background-color: $color;
     color: #fff;
     border: none;
@@ -144,7 +144,7 @@ $color: #ff6721;
       opacity: 0.6;
     }
   }
-  &.language-level-danger {
+  &.wy-level-danger {
     background-color: #f56c6c;
     color: #fff;
     border: none;
@@ -153,7 +153,7 @@ $color: #ff6721;
     }
   }
   // 禁用
-  &.language-theme-button {
+  &.wy-theme-button {
     &[disabled] {
       cursor: not-allowed;
       color: #ccc;
@@ -162,8 +162,8 @@ $color: #ff6721;
       }
     }
   }
-  &.language-theme-link,
-  &.language-theme-text {
+  &.wy-theme-link,
+  &.wy-theme-text {
     &[disabled] {
       cursor: not-allowed;
       color: #ccc;
@@ -171,7 +171,7 @@ $color: #ff6721;
   }
 
   //   加载的样式
-  > .language-loadingIndicator {
+  > .wy-loadingIndicator {
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -180,11 +180,11 @@ $color: #ff6721;
     border-color: $color $color $color transparent;
     border-style: solid;
     border-width: 2px;
-    animation: language-spin 1s infinite linear;
+    animation: wy-spin 1s infinite linear;
   }
 }
 
-@keyframes language-spin {
+@keyframes wy-spin {
   0% {
     transform: rotate(0deg);
   }

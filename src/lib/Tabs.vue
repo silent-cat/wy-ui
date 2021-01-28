@@ -1,8 +1,8 @@
 <template>
-  <div class="language-tabs">
-    <div class="language-tabs-nav" ref="container">
+  <div class="wy-tabs">
+    <div class="wy-tabs-nav" ref="container">
       <div
-        class="language-tabs-nav-item"
+        class="wy-tabs-nav-item"
         v-for="(t, index) in titles"
         :key="index"
         :ref="
@@ -16,11 +16,11 @@
         {{ t }}
       </div>
 
-      <div class="language-tabs-nav-indicator" ref="indicator"></div>
+      <div class="wy-tabs-nav-indicator" ref="indicator"></div>
     </div>
-    <div class="language-tabs-content">
+    <div class="wy-tabs-content">
       <component
-        class="language-tabs-content-item"
+        class="wy-tabs-content-item"
         v-for="(c, index) in defaults"
         :is="c"
         :key="index"
@@ -99,7 +99,7 @@ export default {
 
 <style lang="scss">
 $color: #ff6721;
-.language-tabs {
+.wy-tabs {
   width: 100%;
   &-nav {
     position: relative;

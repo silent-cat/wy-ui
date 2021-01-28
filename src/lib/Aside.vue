@@ -1,5 +1,5 @@
 <template>
-  <main class="language-layout-aside">
+  <main class="wy-layout-aside">
     <slot></slot>
   </main>
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.language-layout-aside {
+.wy-layout-aside {
   width: 200px;
   line-height: 160px;
   background: orange;

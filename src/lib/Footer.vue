@@ -1,5 +1,5 @@
 <template>
-  <main class="language-layout-footer">
+  <main class="wy-layout-footer">
     <slot></slot>
   </main>
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.language-layout-footer {
+.wy-layout-footer {
   height: 64px;
   line-height: 64px;
   background-color: blue;

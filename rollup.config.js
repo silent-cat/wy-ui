@@ -12,8 +12,8 @@ export default {
     globals: {
       vue: 'Vue',
     },
-    name: 'Language',
-    file: 'dist/lib/language.js',
+    name: 'wy',
+    file: 'dist/lib/wy.js',
     format: 'umd',
     plugins: [terser()],
   },

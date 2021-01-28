@@ -7,9 +7,6 @@ import LayoutDemo from './components/demo/LayoutDemo.vue'
 
 import Home from './views/Home.vue'
 import Doc from './views/Doc.vue'
-import Intro from './views/Intro.vue'
-import Start from './views/Start.vue'
-import Install from './views/Install.vue'
 
 import { h } from 'vue'
 import Markdown from './components/Markdown.vue'

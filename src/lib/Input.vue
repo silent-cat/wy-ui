@@ -1,7 +1,7 @@
 <template>
   <input
     type="text"
-    class="language-input"
+    class="wy-input"
     :value="value"
     @input="$emit('update:value', $event.target.value)"
   />
@@ -16,7 +16,7 @@ export default {
 <style lang="scss">
 $border-color1: #ccc;
 $border-color2: #ff6721;
-.language-input {
+.wy-input {
   display: block;
   padding: 0 15px;
   margin-bottom: 10px;

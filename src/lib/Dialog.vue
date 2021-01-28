@@ -2,13 +2,13 @@
   <template v-if="visible">
     <!-- Teleport内置组件，传到body下面 把Dialog移到body下面-->
     <Teleport to="body">
-      <div class="language-dialog-overlay" @click="onClickOverlay"></div>
-      <div class="language-dialog-wrapper">
-        <div class="language-dialog">
+      <div class="wy-dialog-overlay" @click="onClickOverlay"></div>
+      <div class="wy-dialog-wrapper">
+        <div class="wy-dialog">
           <header>
             <!-- 具名插槽 -->
             <slot name="title" />
-            <span @click="close" class="language-dialog-close"></span>
+            <span @click="close" class="wy-dialog-close"></span>
           </header>
           <main>
             <slot name="content" />
@@ -71,7 +71,7 @@ export default {
 <style lang="scss">
 $radius: 4px;
 $border-color: #d9d9d9;
-.language-dialog {
+.wy-dialog {
   // padding: 10px 0 10px 0;
   box-shadow: 0 0 3px fade_out(black, 0.5);
   background-color: #fff;

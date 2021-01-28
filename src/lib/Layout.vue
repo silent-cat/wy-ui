@@ -1,5 +1,5 @@
 <template>
-  <section class="language-layout" :class="{ hasAside: bool }">
+  <section class="wy-layout" :class="{ hasAside: bool }">
     <slot></slot>
   </section>
 </template>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
-.language-layout {
+.wy-layout {
   display: flex;
   flex: auto;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import './lib/language.scss'
+import './lib/wy.scss'
 import './index.scss'
 import App from './App.vue'
 import { createApp } from 'vue'

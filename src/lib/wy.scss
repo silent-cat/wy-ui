@@ -1,6 +1,6 @@
-// 匹配到以language-开头的类和包含 空格language- 的类
-[class^='language-'],
-[class*=' language-'] {
+// 匹配到以wy-开头的类和包含 空格wy- 的类
+[class^='wy-'],
+[class*=' wy-'] {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

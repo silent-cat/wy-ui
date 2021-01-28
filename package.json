@@ -1,10 +1,10 @@
 {
-  "name": "language-ui-1",
-  "version": "0.0.5",
+  "name": "wy-ui",
+  "version": "0.0.0",
   "files": [
     "dist/lib/*"
   ],
-  "main": "dist/lib/language.js",
+  "main": "dist/lib/wy.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"

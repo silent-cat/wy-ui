@@ -9,7 +9,7 @@
       <wy-button @click="hideCode" v-else>隐藏代码</wy-button>
     </div>
     <div class="demo-code" v-if="codeVisible">
-      <pre class="language-html" v-html="html"></pre>
+      <pre class="wy-html" v-html="html"></pre>
     </div>
   </div>
 </template>

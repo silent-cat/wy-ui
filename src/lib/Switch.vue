@@ -1,8 +1,8 @@
 <template>
   <button
     @click="toggle"
-    class="language-switch"
-    :class="{ 'language-checked': value, [`language-size-${size}`]: size }"
+    class="wy-switch"
+    :class="{ 'wy-checked': value, [`wy-size-${size}`]: size }"
   >
     <span></span>
   </button>
@@ -38,7 +38,7 @@ $w: 44px;
 $h3: $h - 4px;
 $color: #ff6721;
 $shadow: rgba(0, 0, 0, 0.836);
-.language-switch {
+.wy-switch {
   position: relative;
   height: $h;
   width: $w;
@@ -73,7 +73,7 @@ $shadow: rgba(0, 0, 0, 0.836);
     //   实现动画
     transition: all 250ms;
   }
-  &.language-checked {
+  &.wy-checked {
     background-color: $color;
     > span {
       left: calc(100% - #{$w/2} + 2px);
@@ -84,7 +84,7 @@ $shadow: rgba(0, 0, 0, 0.836);
       width: $w/2;
     }
   }
-  &.language-checked:active {
+  &.wy-checked:active {
     > span {
       width: $w/2;
       margin-left: -4px;

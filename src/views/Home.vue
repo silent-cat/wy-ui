@@ -6,9 +6,7 @@
       <h4 class="intro">基于Vue3和Typescript实现的UI组件库</h4>
       <p class="actions">
         <router-link to="/doc/intro" class="start">起步</router-link>
-        <a href="https://github.com/silent-cat/language-ui" class="github"
-          >github</a
-        >
+        <a href="https://github.com/silent-cat/wy-ui" class="github">github</a>
       </p>
     </div>
   </div>

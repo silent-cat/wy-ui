@@ -1,5 +1,5 @@
 <template>
-  <main class="language-layout-content">
+  <main class="wy-layout-content">
     <slot></slot>
   </main>
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.language-layout-content {
+.wy-layout-content {
   flex-grow: 1;
   height: 160px;
   line-height: 160px;
