@@ -80,7 +80,7 @@ export default {
       console.log(tag.type)
 
       if (tag.type !== wyTab) {
-        throw new Error('Tabs 子标签必须是Tab')
+        throw new Error('wyTabs 子标签必须是wyTab')
       }
     })
 

@@ -9,7 +9,6 @@ import { provide, ref } from 'vue'
 import { router } from './router'
 export default {
   name: 'App',
-
   setup() {
     // 获取到屏幕宽度
     const width = document.documentElement.clientWidth

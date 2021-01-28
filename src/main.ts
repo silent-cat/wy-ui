@@ -8,17 +8,17 @@ import Markdown from './components/Markdown.vue'
 import Demo from './components/Demo.vue'
 
 import {
-  Switch,
-  Button,
-  Tabs,
-  Tab,
-  Dialog,
-  Input,
-  Layout,
-  Header,
-  Content,
-  Footer,
-  Aside,
+  wySwitch,
+  wyButton,
+  wyTabs,
+  wyTab,
+  wyDialog,
+  wyInput,
+  wyLayout,
+  wyHeader,
+  wyContent,
+  wyFooter,
+  wyAside,
 } from './lib/index'
 
 import { router } from './router'
@@ -26,18 +26,20 @@ import { router } from './router'
 // 使用router
 const app = createApp(App)
 app.use(router)
+
 app.mount('#app')
 // 全局注册组件
 app.component('Markdown', Markdown)
 app.component('Demo', Demo)
-app.component('wy-switch', Switch)
-app.component('wy-button', Button)
-app.component('wy-tabs', Tabs)
-app.component('wy-tab', Tab)
-app.component('wy-input', Input)
-app.component('wy-dialog', Dialog)
-app.component('wy-layout', Layout)
-app.component('wy-header', Header)
-app.component('wy-content', Content)
-app.component('wy-footer', Footer)
-app.component('wy-aside', Aside)
+
+app.component('wy-switch', wySwitch)
+app.component('wy-button', wyButton)
+app.component('wy-tabs', wyTabs)
+app.component('wy-tab', wyTab)
+app.component('wy-input', wyInput)
+app.component('wy-dialog', wyDialog)
+app.component('wy-layout', wyLayout)
+app.component('wy-header', wyHeader)
+app.component('wy-content', wyContent)
+app.component('wy-footer', wyFooter)
+app.component('wy-aside', wyAside)
