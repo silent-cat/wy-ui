@@ -12,7 +12,7 @@ export default {}
 .wy-layout-aside {
   width: 200px;
   line-height: 160px;
-  background: orange;
+  background: #ff824c;
   text-align: center;
 }
 </style>

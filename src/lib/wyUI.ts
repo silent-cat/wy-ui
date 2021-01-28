@@ -13,8 +13,6 @@ import { ComponentOptions } from 'vue'
 
 export default {
   install: (app: ComponentOptions) => {
-    // Plugin code goes here
-
     app.component('wy-button', Button)
     app.component('wy-switch', Switch)
     app.component('wy-dialog', Dialog)

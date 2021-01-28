@@ -95,7 +95,7 @@ export default {
   margin: 32px auto;
   padding: 0 16px;
   @media (min-width: 800px) {
-    width: 640px;
+    width: 768px;
     > ul {
       justify-content: start !important;
       > li {
@@ -119,7 +119,6 @@ export default {
       margin: 16px 0;
       display: grid;
       justify-content: start;
-      align-content: space-between;
       grid-template-areas:
         'icon title'
         'icon text';

@@ -12,7 +12,7 @@ export default {}
 .wy-layout-header {
   height: 64px;
   line-height: 64px;
-  background-color: green;
+  background-color: #fcbfa4;
   text-align: center;
 }
 </style>

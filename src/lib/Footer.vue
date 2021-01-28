@@ -12,7 +12,7 @@ export default {}
 .wy-layout-footer {
   height: 64px;
   line-height: 64px;
-  background-color: blue;
+  background-color: #fcbfa4;
   text-align: center;
 }
 </style>

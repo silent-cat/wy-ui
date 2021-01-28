@@ -17,7 +17,7 @@
 <script lang="ts">
 import wyButton from '../lib/Button.vue'
 import 'prismjs' //用于高亮源代码
-import 'prismjs/themes/prism-coy.css' //引入主题样式
+import 'prismjs/themes/prism-tomorrow.css' //引入主题样式
 import { computed, ref } from 'vue'
 const Prism = (window as any).Prism
 export default {
@@ -68,12 +68,15 @@ $border-color: #d9d9d9;
   &-code {
     padding: 8px 16px;
     border-top: 1px dashed $border-color;
-    overflow: scroll;
+    // overflow: scroll;
+    @media screen and (max-width: 500px) {
+      overflow-x: scroll;
+    }
     > pre {
       line-height: 1.1;
       font-family: Consolas, 'Courier New', Courier, monospace;
       margin: 0;
-      width: 70vw;
+      width: 80vw;
     }
   }
 }

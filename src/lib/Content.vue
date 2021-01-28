@@ -13,7 +13,7 @@ export default {}
   flex-grow: 1;
   height: 160px;
   line-height: 160px;
-  background: #ff6721;
+  background: #ff8f5b;
   text-align: center;
 }
 </style>
