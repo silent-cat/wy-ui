@@ -22,4 +22,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+article {
+  width: 100%;
+}
+</style>

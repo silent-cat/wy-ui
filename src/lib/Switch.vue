@@ -1,9 +1,5 @@
 <template>
-  <button
-    @click="toggle"
-    class="wy-switch"
-    :class="{ 'wy-checked': value, [`wy-size-${size}`]: size }"
-  >
+  <button @click="toggle" class="wy-switch" :class="{ 'wy-checked': value }">
     <span></span>
   </button>
 </template>
@@ -25,9 +21,6 @@ export default {
       context.emit('update:value', !props.value)
     }
     return { toggle }
-    //
-    const { size } = props
-    //
   },
 }
 </script>

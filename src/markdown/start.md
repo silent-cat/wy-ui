@@ -4,8 +4,10 @@
 
 全局引入
 
+main.js
+
 ```
-// main.js
+main.js
 import { createApp } from "vue";
 import App from "./App.vue";
 import { wyUI } from "wy-ui-1";
