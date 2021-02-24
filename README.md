@@ -12,7 +12,6 @@
 
 ```
 yarn add wy-ui-1
-
 ```
 或
 ```
@@ -43,8 +42,8 @@ main.js
 ```
 import { createApp } from "vue";
 import App from "./App.vue";
-import { wySwitch } from "wy-ui-1";
-import "wy-ui-1/dist/lib/wy.css";
+import { wySwitch } from "wy-ui-1";//引入wyUI
+import "wy-ui-1/dist/lib/wy.css";//引入样式
 
 const app = createApp(App);
 app.component("wy-switch", wySwitch);//可自定义组件名称
