@@ -17,9 +17,8 @@ yarn add wy-ui-1或者npm install wy-ui-1
 
 ### 全局引入
 
-=======
 ### 支持全局引入
->>>>>>> 80f3143ba6af32d7733330e2c71ded61733900be
+
 main.js
 
 ```
