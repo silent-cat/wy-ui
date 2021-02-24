@@ -12,9 +12,9 @@
 
 ```
 yarn add wy-ui-1
-或
-```
 
+```
+或
 ```
 npm install wy-ui-1
 ```
@@ -28,7 +28,7 @@ main.js
 ```
 import { createApp } from "vue";
 import App from "./App.vue";
-import { wyUI } from "wy-ui-1"; //引入wyUI,
+import { wyUI } from "wy-ui-1"; //引入wyUI
 import "wy-ui-1/dist/lib/wy.css";//引入样式
 
 const app = createApp(App);
