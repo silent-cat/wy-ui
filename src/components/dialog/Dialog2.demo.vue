@@ -4,7 +4,7 @@
 <template>
   <wy-button @click="showDialog">点击打开</wy-button>
 </template>
-<script lang="ts">
+<script>
 import { openDialog } from '../../lib/openDialog'
 export default {
   setup() {

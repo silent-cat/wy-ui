@@ -3,12 +3,6 @@
 打开终端运行以下命令
 
 ```
-yarn add wy-ui-1
-```
-
-或
-
-```
 npm install wy-ui-1
 ```
 

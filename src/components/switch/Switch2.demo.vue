@@ -6,7 +6,7 @@
   <wy-switch v-model:value="checked2" disabled />
 </template>
 
-<script lang="ts">
+<script>
 import { ref } from 'vue'
 export default {
   setup() {

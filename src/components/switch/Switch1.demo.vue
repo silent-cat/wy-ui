@@ -4,7 +4,7 @@
 <template>
   <wy-switch v-model:value="checked" />
 </template>
-<script lang="ts">
+<script>
 import { ref } from 'vue'
 export default {
   setup() {

@@ -6,7 +6,7 @@
   <wy-input v-model:value="value" placeholder="请输入内容" />
   <wy-input :value="value" />
 </template>
-<script lang="ts">
+<script>
 import { ref } from 'vue'
 export default {
   setup() {

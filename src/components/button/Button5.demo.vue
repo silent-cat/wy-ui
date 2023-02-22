@@ -5,7 +5,7 @@
   <wy-button loading>加载中</wy-button>
   <wy-button @click="onClick" :loading="isLoading">点击加载</wy-button>
 </template>
-<script lang="ts">
+<script>
 import { ref } from 'vue'
 export default {
   setup() {

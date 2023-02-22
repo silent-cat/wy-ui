@@ -16,7 +16,7 @@
     <template v-slot:title> 提示 </template>
   </wy-dialog>
 </template>
-<script lang="ts">
+<script>
 import { ref } from 'vue'
 export default {
   setup() {
