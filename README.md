@@ -9,11 +9,6 @@
 ## 开始使用
 
 ### 安装
-
-```
-yarn add wy-ui-1
-```
-或
 ```
 npm install wy-ui-1
 ```
